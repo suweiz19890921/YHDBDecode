@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HQDBDecode"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "数据库对象映射模型"
 
   # This description is used to generate tags and improve search results.
