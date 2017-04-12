@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDF0028DD7D6056C22395872 /* libPods-HQModelDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B78CBBF10C4C70E64D9A9B /* libPods-HQModelDemo.a */; };
 		EAFDD9181E9B73CD0086ABB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9171E9B73CD0086ABB4 /* main.m */; };
 		EAFDD91B1E9B73CD0086ABB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD91A1E9B73CD0086ABB4 /* AppDelegate.m */; };
 		EAFDD91E1E9B73CD0086ABB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD91D1E9B73CD0086ABB4 /* ViewController.m */; };
 		EAFDD9211E9B73CD0086ABB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD91F1E9B73CD0086ABB4 /* Main.storyboard */; };
 		EAFDD9231E9B73CD0086ABB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD9221E9B73CD0086ABB4 /* Assets.xcassets */; };
 		EAFDD9261E9B73CD0086ABB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD9241E9B73CD0086ABB4 /* LaunchScreen.storyboard */; };
-		EAFDD9331E9B74780086ABB4 /* NSObject+HQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9321E9B74780086ABB4 /* NSObject+HQModel.m */; };
+		EAFDD9C11E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9C01E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m */; };
+		EAFDD9C71E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9C61E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m */; };
+		EAFDD9CC1E9CCF5F0086ABB4 /* FishBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9C91E9CCF5F0086ABB4 /* FishBaseModel.m */; };
+		EAFDD9CD1E9CCF5F0086ABB4 /* FishDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9CB1E9CCF5F0086ABB4 /* FishDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08CA85CA98D2BEFAFB0B4326 /* Pods-HQModelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQModelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQModelDemo/Pods-HQModelDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5C49BE0EB50C299A308A9995 /* Pods-HQModelDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQModelDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQModelDemo/Pods-HQModelDemo.release.xcconfig"; sourceTree = "<group>"; };
+		95B78CBBF10C4C70E64D9A9B /* libPods-HQModelDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HQModelDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDD9131E9B73CD0086ABB4 /* HQModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDD9171E9B73CD0086ABB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAFDD9191E9B73CD0086ABB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +34,14 @@
 		EAFDD9221E9B73CD0086ABB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFDD9251E9B73CD0086ABB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFDD9271E9B73CD0086ABB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAFDD9311E9B74780086ABB4 /* NSObject+HQModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HQModel.h"; sourceTree = "<group>"; };
-		EAFDD9321E9B74780086ABB4 /* NSObject+HQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HQModel.m"; sourceTree = "<group>"; };
+		EAFDD9BF1E9CBF7D0086ABB4 /* HQDBDecodeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQDBDecodeUtilities.h; sourceTree = "<group>"; };
+		EAFDD9C01E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQDBDecodeUtilities.m; sourceTree = "<group>"; };
+		EAFDD9C51E9CC4EC0086ABB4 /* NSObject+HQDBDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HQDBDecode.h"; sourceTree = "<group>"; };
+		EAFDD9C61E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HQDBDecode.m"; sourceTree = "<group>"; };
+		EAFDD9C81E9CCF5F0086ABB4 /* FishBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishBaseModel.h; sourceTree = "<group>"; };
+		EAFDD9C91E9CCF5F0086ABB4 /* FishBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishBaseModel.m; sourceTree = "<group>"; };
+		EAFDD9CA1E9CCF5F0086ABB4 /* FishDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishDetail.h; sourceTree = "<group>"; };
+		EAFDD9CB1E9CCF5F0086ABB4 /* FishDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF0028DD7D6056C22395872 /* libPods-HQModelDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB6635E20B2D246BE80536B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B78CBBF10C4C70E64D9A9B /* libPods-HQModelDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EAFDD90A1E9B73CD0086ABB4 = {
 			isa = PBXGroup;
 			children = (
 				EAFDD9151E9B73CD0086ABB4 /* HQModelDemo */,
 				EAFDD9141E9B73CD0086ABB4 /* Products */,
+				FEB78C9369689FAA66C143A7 /* Pods */,
+				CB6635E20B2D246BE80536B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,11 +85,15 @@
 		EAFDD9151E9B73CD0086ABB4 /* HQModelDemo */ = {
 			isa = PBXGroup;
 			children = (
-				EAFDD92D1E9B743F0086ABB4 /* Classes */,
+				EAFDD9BB1E9C843F0086ABB4 /* Classes */,
 				EAFDD9191E9B73CD0086ABB4 /* AppDelegate.h */,
 				EAFDD91A1E9B73CD0086ABB4 /* AppDelegate.m */,
 				EAFDD91C1E9B73CD0086ABB4 /* ViewController.h */,
 				EAFDD91D1E9B73CD0086ABB4 /* ViewController.m */,
+				EAFDD9C81E9CCF5F0086ABB4 /* FishBaseModel.h */,
+				EAFDD9C91E9CCF5F0086ABB4 /* FishBaseModel.m */,
+				EAFDD9CA1E9CCF5F0086ABB4 /* FishDetail.h */,
+				EAFDD9CB1E9CCF5F0086ABB4 /* FishDetail.m */,
 				EAFDD91F1E9B73CD0086ABB4 /* Main.storyboard */,
 				EAFDD9221E9B73CD0086ABB4 /* Assets.xcassets */,
 				EAFDD9241E9B73CD0086ABB4 /* LaunchScreen.storyboard */,
@@ -83,14 +111,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EAFDD92D1E9B743F0086ABB4 /* Classes */ = {
+		EAFDD9BB1E9C843F0086ABB4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EAFDD9311E9B74780086ABB4 /* NSObject+HQModel.h */,
-				EAFDD9321E9B74780086ABB4 /* NSObject+HQModel.m */,
+				EAFDD9BF1E9CBF7D0086ABB4 /* HQDBDecodeUtilities.h */,
+				EAFDD9C01E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m */,
+				EAFDD9C51E9CC4EC0086ABB4 /* NSObject+HQDBDecode.h */,
+				EAFDD9C61E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m */,
 			);
 			name = Classes;
-			path = ../../../Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		FEB78C9369689FAA66C143A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08CA85CA98D2BEFAFB0B4326 /* Pods-HQModelDemo.debug.xcconfig */,
+				5C49BE0EB50C299A308A9995 /* Pods-HQModelDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAFDD92A1E9B73CD0086ABB4 /* Build configuration list for PBXNativeTarget "HQModelDemo" */;
 			buildPhases = (
+				92B86E9B6A0BD84F77834DFF /* [CP] Check Pods Manifest.lock */,
 				EAFDD90F1E9B73CD0086ABB4 /* Sources */,
 				EAFDD9101E9B73CD0086ABB4 /* Frameworks */,
 				EAFDD9111E9B73CD0086ABB4 /* Resources */,
+				545AEF1B34D2C7B0605626E5 /* [CP] Embed Pods Frameworks */,
+				FB85D8DD3F0952ED4260EB4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,14 +202,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		545AEF1B34D2C7B0605626E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HQModelDemo/Pods-HQModelDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B86E9B6A0BD84F77834DFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB85D8DD3F0952ED4260EB4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HQModelDemo/Pods-HQModelDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAFDD90F1E9B73CD0086ABB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFDD9C11E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m in Sources */,
 				EAFDD91E1E9B73CD0086ABB4 /* ViewController.m in Sources */,
 				EAFDD91B1E9B73CD0086ABB4 /* AppDelegate.m in Sources */,
-				EAFDD9331E9B74780086ABB4 /* NSObject+HQModel.m in Sources */,
+				EAFDD9C71E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m in Sources */,
+				EAFDD9CD1E9CCF5F0086ABB4 /* FishDetail.m in Sources */,
+				EAFDD9CC1E9CCF5F0086ABB4 /* FishBaseModel.m in Sources */,
 				EAFDD9181E9B73CD0086ABB4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +377,7 @@
 		};
 		EAFDD92B1E9B73CD0086ABB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CA85CA98D2BEFAFB0B4326 /* Pods-HQModelDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G25YSPXR6H;
@@ -296,6 +390,7 @@
 		};
 		EAFDD92C1E9B73CD0086ABB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C49BE0EB50C299A308A9995 /* Pods-HQModelDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G25YSPXR6H;

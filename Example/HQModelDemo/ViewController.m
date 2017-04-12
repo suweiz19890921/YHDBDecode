@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "NSObject+HQDBDecode.h"
+#import "FishDetail.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [FishDetail hq_dataWithResultSet:nil];
 }
 
 
