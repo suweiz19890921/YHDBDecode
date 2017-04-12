@@ -9,7 +9,7 @@
 #import "NSObject+HQDBDecode.h"
 #import "objc/message.h"
 #import "HQDBDecodeUtilities.h"
-#import <YYModel.h>
+#import "NSObject+YYModel.h"
 #define force_inline __inline__ __attribute__((always_inline))
 
 
