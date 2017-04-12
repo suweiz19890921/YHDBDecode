@@ -67,13 +67,13 @@ static force_inline HQEncodingTypeNSType HQClassGetNSType(Class cls)
         {
             NSScanner* scanner            = nil;
             scanner = [NSScanner scannerWithString: typeEncoding];
-            [scanner scanUpToString:@"T" intoString: nil];
-            [scanner scanString:@"T" intoString:nil];
-            [scanner scanUpToCharactersFromSet:[NSCharacterSet characterSetWithCharactersInString:@"\"<"]
-                                    intoString:&clsName];
-            if (clsName.length) _cls = objc_getClass(clsName.UTF8String);
-            _nsType = HQClassGetNSType(_cls);
-
+            if ([scanner scanString:@"T@\"" intoString:NULL])
+            {
+                [scanner scanUpToCharactersFromSet:[NSCharacterSet characterSetWithCharactersInString:@"\"<"]
+                                        intoString:&clsName];
+                if (clsName.length) _cls = objc_getClass(clsName.UTF8String);
+                _nsType = HQClassGetNSType(_cls);
+            }
         }
         
         if (!_setter) {
@@ -99,7 +99,24 @@ static force_inline HQEncodingTypeNSType HQClassGetNSType(Class cls)
 @implementation _HQDBDecodeMeta
 + (instancetype)metaWithClass:(Class)cls
 {
-    _HQDBDecodeMeta *meta = [[_HQDBDecodeMeta alloc] initWithClass:cls];
+    static CFMutableDictionaryRef cache;
+    static dispatch_once_t onceToken;
+    static dispatch_semaphore_t lock;
+    dispatch_once(&onceToken, ^{
+        cache = CFDictionaryCreateMutable(CFAllocatorGetDefault(), 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+        lock = dispatch_semaphore_create(1);
+    });
+    dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
+    _HQDBDecodeMeta *meta = CFDictionaryGetValue(cache, (__bridge const void *)(cls));
+    dispatch_semaphore_signal(lock);
+    if (!meta) {
+        meta = [[_HQDBDecodeMeta alloc] initWithClass:cls];
+        if (meta) {
+            dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
+            CFDictionarySetValue(cache, (__bridge const void *)(cls), (__bridge const void *)(meta));
+            dispatch_semaphore_signal(lock);
+        }
+    }
     return meta;
 }
 
