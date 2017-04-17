@@ -8,4 +8,6 @@ target 'HQModelDemo' do
   # Pods for HQModelDemo
 pod 'FMDB', '~> 2.6.2'
 pod 'YYModel', '~> 1.0.4'
+pod 'JSONModel', '~> 1.7.0'
+
 end

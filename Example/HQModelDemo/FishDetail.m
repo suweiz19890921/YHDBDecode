@@ -7,6 +7,7 @@
 //
 
 #import "FishDetail.h"
+#import "HQDatabaseManager.h"
 
 @implementation FishDetail
 
@@ -32,4 +33,13 @@
 //    }];
 //    return array;
 //}
++ (nonnull NSString *)hq_dbName
+{
+    return @"localData.db";
+}
+
++ (nullable NSArray<NSString *> *)hq_propertyPrimarykeyList
+{
+    return @[@"ID"];
+}
 @end

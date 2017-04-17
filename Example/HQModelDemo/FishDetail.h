@@ -15,35 +15,35 @@
 /**
  *  ID
  */
-@property (nonatomic, strong) NSString *ID;
+@property (nonatomic, strong) NSString<PrimaryKey> *ID;
 /**
  *  鱼名称
  */
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString<Optional> *name;
 /**
  *  鱼别名
  */
-@property (nonatomic, strong) NSString *fishAlias;
+@property (nonatomic, strong) NSString<Optional> *fishAlias;
 /**
  *  鱼形态
  */
-@property (nonatomic, strong) NSString *fishForm;
+@property (nonatomic, strong) NSString<Optional> *fishForm;
 /**
  *  鱼分布
  */
-@property (nonatomic, strong) NSString *distribution;
+@property (nonatomic, strong) NSString<Optional> *distribution;
 /**
  *  鱼类生息环境
  */
-@property (nonatomic, strong) NSString *habitats;
+@property (nonatomic, strong) NSString<Optional> *habitats;
 /**
  *  鱼类食性特点
  */
-@property (nonatomic, strong) NSString *characteristics;
+@property (nonatomic, strong) NSString<Optional> *characteristics;
 /**
  *  其他补充
  */
-@property (nonatomic, strong) NSString *other;
+@property (nonatomic, strong) NSString<Optional> *other;
 /**
  *  语言
  */
@@ -51,9 +51,8 @@
 /**
  *  特征简介
  */
-@property (nonatomic, strong) const NSString *feature;
+@property (nonatomic, strong) NSString<Optional> *feature;
 
-@property (nonatomic, copy) void (^areaCodeSelectBlock)();
 /**
  *  最后更新时间
  */
@@ -66,22 +65,20 @@
  *  拉丁名
  */
 @property (nonatomic, strong) NSString *latin;
-@property (nonatomic, retain) NSString *latin1;
-@property (nonatomic, copy) NSString *latin2;
 
 /**
  *  首图
  */
-@property (nonatomic, strong) NSString *img;
+@property (nonatomic, strong) NSString<Optional> *img;
 /**
  *  图库(不包含首图)
  */
-@property (nonatomic, strong) NSString *imgs;
+@property (nonatomic, strong) NSString<Optional> *imgs;
 
 
-@property (nonatomic, strong) NSString *traumaRisks;
+@property (nonatomic, strong) NSString <Optional>*traumaRisks;
 
-@property (nonatomic, strong) NSString *foodRisks;
+@property (nonatomic, strong) NSString <Optional>*foodRisks;
 
 
 + (NSArray *)selectImageByLatins:(NSArray *)latins;

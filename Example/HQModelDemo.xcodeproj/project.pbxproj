@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DDF0028DD7D6056C22395872 /* libPods-HQModelDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B78CBBF10C4C70E64D9A9B /* libPods-HQModelDemo.a */; };
+		EAEDFCF31EA471DC00031530 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDFCF21EA471DC00031530 /* TestModel.m */; };
+		EAEDFCF61EA4738000031530 /* TestSubModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDFCF51EA4738000031530 /* TestSubModel.m */; };
+		EAEDFCF91EA48E3800031530 /* TestSub1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDFCF81EA48E3800031530 /* TestSub1Model.m */; };
+		EAEDFCFC1EA48EC400031530 /* TestSub2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDFCFB1EA48EC400031530 /* TestSub2Model.m */; };
+		EAEDFCFF1EA4A15600031530 /* TestJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEDFCFE1EA4A15600031530 /* TestJSONModel.m */; };
 		EAFDD9181E9B73CD0086ABB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9171E9B73CD0086ABB4 /* main.m */; };
 		EAFDD91B1E9B73CD0086ABB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD91A1E9B73CD0086ABB4 /* AppDelegate.m */; };
 		EAFDD91E1E9B73CD0086ABB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD91D1E9B73CD0086ABB4 /* ViewController.m */; };
@@ -16,14 +21,34 @@
 		EAFDD9261E9B73CD0086ABB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD9241E9B73CD0086ABB4 /* LaunchScreen.storyboard */; };
 		EAFDD9C11E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9C01E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m */; };
 		EAFDD9C71E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9C61E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m */; };
-		EAFDD9CC1E9CCF5F0086ABB4 /* FishBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9C91E9CCF5F0086ABB4 /* FishBaseModel.m */; };
 		EAFDD9CD1E9CCF5F0086ABB4 /* FishDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9CB1E9CCF5F0086ABB4 /* FishDetail.m */; };
+		EAFDD9E21E9DCE9C0086ABB4 /* DBInit.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9D31E9DCE9C0086ABB4 /* DBInit.m */; };
+		EAFDD9E31E9DCE9C0086ABB4 /* HQDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9D51E9DCE9C0086ABB4 /* HQDatabaseManager.m */; };
+		EAFDD9E41E9DCE9C0086ABB4 /* HQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9D71E9DCE9C0086ABB4 /* HQModel.m */; };
+		EAFDD9E51E9DCE9C0086ABB4 /* HQModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9D91E9DCE9C0086ABB4 /* HQModelClassProperty.m */; };
+		EAFDD9E61E9DCE9C0086ABB4 /* HQModelMetadate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9DB1E9DCE9C0086ABB4 /* HQModelMetadate.m */; };
+		EAFDD9E71E9DCE9C0086ABB4 /* NSArray+util.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9DD1E9DCE9C0086ABB4 /* NSArray+util.m */; };
+		EAFDD9E81E9DCE9C0086ABB4 /* NSDictionary+util.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9DF1E9DCE9C0086ABB4 /* NSDictionary+util.m */; };
+		EAFDD9E91E9DCE9C0086ABB4 /* NSString+util.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9E11E9DCE9C0086ABB4 /* NSString+util.m */; };
+		EAFDD9EB1E9DCF680086ABB4 /* localData.db in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD9EA1E9DCF680086ABB4 /* localData.db */; };
+		EAFDD9EE1E9DCFE70086ABB4 /* FishBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9ED1E9DCFE70086ABB4 /* FishBaseModel.m */; };
+		EAFDD9F11E9E0E7D0086ABB4 /* HQDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD9F01E9E0E7D0086ABB4 /* HQDBHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08CA85CA98D2BEFAFB0B4326 /* Pods-HQModelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQModelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQModelDemo/Pods-HQModelDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5C49BE0EB50C299A308A9995 /* Pods-HQModelDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQModelDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQModelDemo/Pods-HQModelDemo.release.xcconfig"; sourceTree = "<group>"; };
 		95B78CBBF10C4C70E64D9A9B /* libPods-HQModelDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HQModelDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEDFCF11EA471DC00031530 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		EAEDFCF21EA471DC00031530 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		EAEDFCF41EA4738000031530 /* TestSubModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSubModel.h; sourceTree = "<group>"; };
+		EAEDFCF51EA4738000031530 /* TestSubModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSubModel.m; sourceTree = "<group>"; };
+		EAEDFCF71EA48E3800031530 /* TestSub1Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSub1Model.h; sourceTree = "<group>"; };
+		EAEDFCF81EA48E3800031530 /* TestSub1Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSub1Model.m; sourceTree = "<group>"; };
+		EAEDFCFA1EA48EC400031530 /* TestSub2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSub2Model.h; sourceTree = "<group>"; };
+		EAEDFCFB1EA48EC400031530 /* TestSub2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSub2Model.m; sourceTree = "<group>"; };
+		EAEDFCFD1EA4A15600031530 /* TestJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJSONModel.h; sourceTree = "<group>"; };
+		EAEDFCFE1EA4A15600031530 /* TestJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSONModel.m; sourceTree = "<group>"; };
 		EAFDD9131E9B73CD0086ABB4 /* HQModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDD9171E9B73CD0086ABB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAFDD9191E9B73CD0086ABB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,10 +63,29 @@
 		EAFDD9C01E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQDBDecodeUtilities.m; sourceTree = "<group>"; };
 		EAFDD9C51E9CC4EC0086ABB4 /* NSObject+HQDBDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HQDBDecode.h"; sourceTree = "<group>"; };
 		EAFDD9C61E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HQDBDecode.m"; sourceTree = "<group>"; };
-		EAFDD9C81E9CCF5F0086ABB4 /* FishBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishBaseModel.h; sourceTree = "<group>"; };
-		EAFDD9C91E9CCF5F0086ABB4 /* FishBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishBaseModel.m; sourceTree = "<group>"; };
 		EAFDD9CA1E9CCF5F0086ABB4 /* FishDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishDetail.h; sourceTree = "<group>"; };
 		EAFDD9CB1E9CCF5F0086ABB4 /* FishDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishDetail.m; sourceTree = "<group>"; };
+		EAFDD9D21E9DCE9C0086ABB4 /* DBInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBInit.h; sourceTree = "<group>"; };
+		EAFDD9D31E9DCE9C0086ABB4 /* DBInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBInit.m; sourceTree = "<group>"; };
+		EAFDD9D41E9DCE9C0086ABB4 /* HQDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQDatabaseManager.h; sourceTree = "<group>"; };
+		EAFDD9D51E9DCE9C0086ABB4 /* HQDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQDatabaseManager.m; sourceTree = "<group>"; };
+		EAFDD9D61E9DCE9C0086ABB4 /* HQModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQModel.h; sourceTree = "<group>"; };
+		EAFDD9D71E9DCE9C0086ABB4 /* HQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQModel.m; sourceTree = "<group>"; };
+		EAFDD9D81E9DCE9C0086ABB4 /* HQModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQModelClassProperty.h; sourceTree = "<group>"; };
+		EAFDD9D91E9DCE9C0086ABB4 /* HQModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQModelClassProperty.m; sourceTree = "<group>"; };
+		EAFDD9DA1E9DCE9C0086ABB4 /* HQModelMetadate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQModelMetadate.h; sourceTree = "<group>"; };
+		EAFDD9DB1E9DCE9C0086ABB4 /* HQModelMetadate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQModelMetadate.m; sourceTree = "<group>"; };
+		EAFDD9DC1E9DCE9C0086ABB4 /* NSArray+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+util.h"; sourceTree = "<group>"; };
+		EAFDD9DD1E9DCE9C0086ABB4 /* NSArray+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+util.m"; sourceTree = "<group>"; };
+		EAFDD9DE1E9DCE9C0086ABB4 /* NSDictionary+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+util.h"; sourceTree = "<group>"; };
+		EAFDD9DF1E9DCE9C0086ABB4 /* NSDictionary+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+util.m"; sourceTree = "<group>"; };
+		EAFDD9E01E9DCE9C0086ABB4 /* NSString+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+util.h"; sourceTree = "<group>"; };
+		EAFDD9E11E9DCE9C0086ABB4 /* NSString+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+util.m"; sourceTree = "<group>"; };
+		EAFDD9EA1E9DCF680086ABB4 /* localData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = localData.db; sourceTree = "<group>"; };
+		EAFDD9EC1E9DCFE70086ABB4 /* FishBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishBaseModel.h; sourceTree = "<group>"; };
+		EAFDD9ED1E9DCFE70086ABB4 /* FishBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishBaseModel.m; sourceTree = "<group>"; };
+		EAFDD9EF1E9E0E7D0086ABB4 /* HQDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQDBHelper.h; sourceTree = "<group>"; };
+		EAFDD9F01E9E0E7D0086ABB4 /* HQDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQDBHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +134,22 @@
 				EAFDD91A1E9B73CD0086ABB4 /* AppDelegate.m */,
 				EAFDD91C1E9B73CD0086ABB4 /* ViewController.h */,
 				EAFDD91D1E9B73CD0086ABB4 /* ViewController.m */,
-				EAFDD9C81E9CCF5F0086ABB4 /* FishBaseModel.h */,
-				EAFDD9C91E9CCF5F0086ABB4 /* FishBaseModel.m */,
+				EAEDFCF11EA471DC00031530 /* TestModel.h */,
+				EAEDFCF21EA471DC00031530 /* TestModel.m */,
+				EAEDFCF41EA4738000031530 /* TestSubModel.h */,
+				EAEDFCF51EA4738000031530 /* TestSubModel.m */,
+				EAEDFCF71EA48E3800031530 /* TestSub1Model.h */,
+				EAEDFCF81EA48E3800031530 /* TestSub1Model.m */,
+				EAEDFCFA1EA48EC400031530 /* TestSub2Model.h */,
+				EAEDFCFB1EA48EC400031530 /* TestSub2Model.m */,
+				EAFDD9D11E9DCE9C0086ABB4 /* DB */,
 				EAFDD9CA1E9CCF5F0086ABB4 /* FishDetail.h */,
 				EAFDD9CB1E9CCF5F0086ABB4 /* FishDetail.m */,
+				EAEDFCFD1EA4A15600031530 /* TestJSONModel.h */,
+				EAEDFCFE1EA4A15600031530 /* TestJSONModel.m */,
+				EAFDD9EC1E9DCFE70086ABB4 /* FishBaseModel.h */,
+				EAFDD9ED1E9DCFE70086ABB4 /* FishBaseModel.m */,
+				EAFDD9EA1E9DCF680086ABB4 /* localData.db */,
 				EAFDD91F1E9B73CD0086ABB4 /* Main.storyboard */,
 				EAFDD9221E9B73CD0086ABB4 /* Assets.xcassets */,
 				EAFDD9241E9B73CD0086ABB4 /* LaunchScreen.storyboard */,
@@ -114,6 +170,8 @@
 		EAFDD9BB1E9C843F0086ABB4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EAFDD9EF1E9E0E7D0086ABB4 /* HQDBHelper.h */,
+				EAFDD9F01E9E0E7D0086ABB4 /* HQDBHelper.m */,
 				EAFDD9BF1E9CBF7D0086ABB4 /* HQDBDecodeUtilities.h */,
 				EAFDD9C01E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m */,
 				EAFDD9C51E9CC4EC0086ABB4 /* NSObject+HQDBDecode.h */,
@@ -121,6 +179,29 @@
 			);
 			name = Classes;
 			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		EAFDD9D11E9DCE9C0086ABB4 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDD9D21E9DCE9C0086ABB4 /* DBInit.h */,
+				EAFDD9D31E9DCE9C0086ABB4 /* DBInit.m */,
+				EAFDD9D41E9DCE9C0086ABB4 /* HQDatabaseManager.h */,
+				EAFDD9D51E9DCE9C0086ABB4 /* HQDatabaseManager.m */,
+				EAFDD9D61E9DCE9C0086ABB4 /* HQModel.h */,
+				EAFDD9D71E9DCE9C0086ABB4 /* HQModel.m */,
+				EAFDD9D81E9DCE9C0086ABB4 /* HQModelClassProperty.h */,
+				EAFDD9D91E9DCE9C0086ABB4 /* HQModelClassProperty.m */,
+				EAFDD9DA1E9DCE9C0086ABB4 /* HQModelMetadate.h */,
+				EAFDD9DB1E9DCE9C0086ABB4 /* HQModelMetadate.m */,
+				EAFDD9DC1E9DCE9C0086ABB4 /* NSArray+util.h */,
+				EAFDD9DD1E9DCE9C0086ABB4 /* NSArray+util.m */,
+				EAFDD9DE1E9DCE9C0086ABB4 /* NSDictionary+util.h */,
+				EAFDD9DF1E9DCE9C0086ABB4 /* NSDictionary+util.m */,
+				EAFDD9E01E9DCE9C0086ABB4 /* NSString+util.h */,
+				EAFDD9E11E9DCE9C0086ABB4 /* NSString+util.m */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		FEB78C9369689FAA66C143A7 /* Pods */ = {
@@ -195,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFDD9261E9B73CD0086ABB4 /* LaunchScreen.storyboard in Resources */,
+				EAFDD9EB1E9DCF680086ABB4 /* localData.db in Resources */,
 				EAFDD9231E9B73CD0086ABB4 /* Assets.xcassets in Resources */,
 				EAFDD9211E9B73CD0086ABB4 /* Main.storyboard in Resources */,
 			);
@@ -255,12 +337,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFDD9E81E9DCE9C0086ABB4 /* NSDictionary+util.m in Sources */,
 				EAFDD9C11E9CBF7D0086ABB4 /* HQDBDecodeUtilities.m in Sources */,
 				EAFDD91E1E9B73CD0086ABB4 /* ViewController.m in Sources */,
+				EAEDFCFC1EA48EC400031530 /* TestSub2Model.m in Sources */,
 				EAFDD91B1E9B73CD0086ABB4 /* AppDelegate.m in Sources */,
+				EAFDD9EE1E9DCFE70086ABB4 /* FishBaseModel.m in Sources */,
+				EAFDD9E61E9DCE9C0086ABB4 /* HQModelMetadate.m in Sources */,
+				EAFDD9F11E9E0E7D0086ABB4 /* HQDBHelper.m in Sources */,
 				EAFDD9C71E9CC4EC0086ABB4 /* NSObject+HQDBDecode.m in Sources */,
 				EAFDD9CD1E9CCF5F0086ABB4 /* FishDetail.m in Sources */,
-				EAFDD9CC1E9CCF5F0086ABB4 /* FishBaseModel.m in Sources */,
+				EAFDD9E21E9DCE9C0086ABB4 /* DBInit.m in Sources */,
+				EAEDFCFF1EA4A15600031530 /* TestJSONModel.m in Sources */,
+				EAFDD9E51E9DCE9C0086ABB4 /* HQModelClassProperty.m in Sources */,
+				EAFDD9E31E9DCE9C0086ABB4 /* HQDatabaseManager.m in Sources */,
+				EAEDFCF61EA4738000031530 /* TestSubModel.m in Sources */,
+				EAFDD9E71E9DCE9C0086ABB4 /* NSArray+util.m in Sources */,
+				EAEDFCF31EA471DC00031530 /* TestModel.m in Sources */,
+				EAEDFCF91EA48E3800031530 /* TestSub1Model.m in Sources */,
+				EAFDD9E41E9DCE9C0086ABB4 /* HQModel.m in Sources */,
+				EAFDD9E91E9DCE9C0086ABB4 /* NSString+util.m in Sources */,
 				EAFDD9181E9B73CD0086ABB4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

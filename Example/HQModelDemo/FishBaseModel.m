@@ -9,16 +9,16 @@
 #import "FishBaseModel.h"
 
 @implementation FishBaseModel
-//+ (long long)lastTime
-//{
-//    Class cla = [self class];
-//    NSArray * ary = [self selectBySQL:[NSString stringWithFormat:@"select max(lastTime),* FROM %@",cla]];
-//    id ssss = [ary lastObject];
-//    if ([ssss respondsToSelector:@selector(lastTime)]) {
-//        return  [[ary lastObject] lastTime];
-//    }
-//    return 0;
-//}
++ (long long)lastTime
+{
+    Class cla = [self class];
+    NSArray * ary = [self selectBySQL:[NSString stringWithFormat:@"select max(lastTime),* FROM %@",cla]];
+    id ssss = [ary lastObject];
+    if ([ssss respondsToSelector:@selector(lastTime)]) {
+        return  [[ary lastObject] lastTime];
+    }
+    return 0;
+}
 
 ////检测是否含有该属性或者成员
 //+ (BOOL) getVariableWithClass:(Class) myClass varName:(NSString *)name{

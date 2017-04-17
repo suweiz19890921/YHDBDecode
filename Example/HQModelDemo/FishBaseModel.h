@@ -6,12 +6,8 @@
 //  Copyright © 2016年 solot. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "HQModel.h"
 
-@interface FishBaseModel : NSObject
-@property (nonatomic, strong) NSString *test1;
-@property (nonatomic, strong) NSString *test2;
-@property (nonatomic, strong) NSString *test3;
-@property (nonatomic, strong) NSString *test4;
+@interface FishBaseModel : HQModel
 + (long long)lastTime;
 @end
