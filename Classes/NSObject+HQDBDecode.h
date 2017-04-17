@@ -73,7 +73,16 @@
 #pragma mark - 自定义协议
 @protocol HQDBDecode <NSObject>
 @optional
+//** 忽略字段列表*/
 + (nullable NSArray<NSString *> *)hq_propertyIgnoredList;
+
+//** 主键列表*/
 + (nullable NSArray<NSString *> *)hq_propertyPrimarykeyList;
+
+//** 所属库名称/
 + (nonnull NSString *)hq_dbName;
+
+//返回容器类中的所需要存放的数据类型 (以 Class 或 Class Name 的形式)。modelContainerPropertyGenericClass
+//modelContainerPropertyGenericClass
+//此方法为YYModel中的的容器类对应表
 @end
