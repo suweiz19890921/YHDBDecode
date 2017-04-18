@@ -224,8 +224,10 @@ static force_inline NSString *MetaGetSqliteType(_HQClassPropertyInfo *info)
                 
                 if (ignoredList && [ignoredList containsObject:info->_name]) continue;
                 if(info->_type == HQEncodingTypeUnknown || info->_type == HQEncodingTypeVoid) continue;
-//                if(info->_nsType == HQEncodingTypeNSUnknown) continue;
                 
+                if(![cls instancesRespondToSelector:info->_setter]) continue;
+                if(![cls instancesRespondToSelector:info->_getter]) continue;
+
                 info->_containerCls = genericMapper[info->_name];
                 mapper[info->_name] = info;
                 [propertyInfo addObject:info];
