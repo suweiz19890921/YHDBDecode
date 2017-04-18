@@ -37,7 +37,7 @@
 /** 指定WHERE条件删除 例: sql @"userno = :no", map @{@"no":@"003"}*/
 + (BOOL)hq_deleteByWHERE:(nonnull NSString *)sql withDictionary:(nullable NSDictionary *)map;
 
-///** 指定完整sql, map同上 */
+/** 指定完整sql, map同上 */
 //+ (BOOL)hq_deleteBySQL:(nonnull NSString *)sql withDictionary:(nullable NSDictionary *)map;
 
 #pragma mark - 改
@@ -50,20 +50,20 @@
 /** 通过列所对应的值修改map内对应的内容 例子columns @{userno:@"001"} map @{@"nickname":@"哈哈2"}*/
 + (BOOL)hq_updateByColumns:(nonnull NSDictionary *)columns withDictionary:(nullable NSDictionary *)map;
 
-///** 指定完整sql, map同上 */
+/** 指定完整sql, map同上 */
 + (BOOL)hq_updateBySQL:(nonnull NSString *)sql withDictionary:(nullable NSDictionary *)map;
 
 #pragma mark - 查
 /** 查询所有数据 */
 + (nullable NSArray *)hq_all;
 
-//** 指定行查询  例 columns @{@"state" : @(1)} */
+/** 指定行查询  例 columns @{@"state" : @(1)} */
 + (nullable NSArray *)hq_selectByColumns:(nullable NSDictionary *)columns;
 
-//** 指定条件查询 例 sql @"language = :language ORDER BY updateTime DESC LIMIT 10" map: @{@"language":@"zh"} */
+/** 指定条件查询 例 sql @"language = :language ORDER BY updateTime DESC LIMIT 10" map: @{@"language":@"zh"} */
 + (nullable NSArray *)hq_selectByWHERE:(nullable NSString *)sql withDictionary:(nullable NSDictionary *)map;
 
-///** 指定完整sql, map同上 */
+/** 指定完整sql, map同上 */
 + (nullable NSArray *)hq_selectBySQL:(nullable NSString *)sql withDictionary:(nullable NSDictionary *)map;
 
 @end
@@ -73,13 +73,13 @@
 #pragma mark - 自定义协议
 @protocol HQDBDecode <NSObject>
 @optional
-//** 忽略字段列表*/
+/** 忽略字段列表*/
 + (nullable NSArray<NSString *> *)hq_propertyIgnoredList;
 
-//** 主键列表*/
+/** 主键列表 */
 + (nullable NSArray<NSString *> *)hq_propertyPrimarykeyList;
 
-//** 所属库名称/
+/** 所属库名称 该字段是生成数据库的必要字段*/
 + (nonnull NSString *)hq_dbName;
 
 //返回容器类中的所需要存放的数据类型 (以 Class 或 Class Name 的形式)。modelContainerPropertyGenericClass
