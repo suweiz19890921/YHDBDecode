@@ -442,12 +442,12 @@ static force_inline void ModelSetObjectToProperty(__unsafe_unretained id model,
             break;
         case HQEncodingTypeInt64:
         {
-            ((void (*)(id, SEL, uint32_t))(void *) objc_msgSend)(model, info->_setter, (uint32_t)[rs longLongIntForColumn:columnName]);
+            ((void (*)(id, SEL, int64_t))(void *) objc_msgSend)(model, info->_setter, (int64_t)[rs longLongIntForColumn:columnName]);
         }
             break;
         case HQEncodingTypeUInt64:
         {
-            ((void (*)(id, SEL, uint32_t))(void *) objc_msgSend)(model, info->_setter, (uint32_t)[rs unsignedLongLongIntForColumn:columnName]);
+            ((void (*)(id, SEL, uint64_t))(void *) objc_msgSend)(model, info->_setter, (uint64_t)[rs unsignedLongLongIntForColumn:columnName]);
         }
             break;
         case HQEncodingTypeFloat:
