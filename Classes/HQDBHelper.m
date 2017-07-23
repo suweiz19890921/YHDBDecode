@@ -49,22 +49,24 @@
         return nil;
     }
 
-    //创建库
-    FMDatabaseQueue *dbQueue = [self.dbQueues objectForKey:dbName];
-    if(!dbQueue)
-    {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *docPath = [paths firstObject];
-        dbQueue = [FMDatabaseQueue databaseQueueWithPath:[docPath stringByAppendingPathComponent:dbName]];
+    @synchronized(self){
+        //创建库
+        FMDatabaseQueue *dbQueue = [self.dbQueues objectForKey:dbName];
         if(!dbQueue)
         {
-            HQLogError(@"%@:FMDatabaseQueue 创建失败",NSStringFromClass(cls));
-            return nil;
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            NSString *docPath = [paths firstObject];
+            dbQueue = [FMDatabaseQueue databaseQueueWithPath:[docPath stringByAppendingPathComponent:dbName]];
+            if(!dbQueue)
+            {
+                HQLogError(@"%@:FMDatabaseQueue 创建失败",NSStringFromClass(cls));
+                return nil;
+            }
+            
+            [self.dbQueues setObject:dbQueue forKey:dbName];
         }
-        [self.dbQueues setObject:dbQueue forKey:dbName];
-    }
-    
-    return dbQueue;
+        return dbQueue;
+    };
 }
 
 + (FMDatabaseQueue *)queueWithClass:(Class)cls
