@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HQDBDecode"
-  s.version      = "0.0.9"
+  s.version      = "1.0.0"
   s.summary      = "数据库对象映射模型"
 
   s.description  = <<-DESC
