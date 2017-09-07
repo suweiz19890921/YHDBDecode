@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
   s.name         = "HQDBDecode"
   s.version      = "0.0.9"
@@ -80,6 +79,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "FMDB", "~> 2.6.2"
+  s.dependency 'FMDB/SQLCipher', '~> 2.5'
   s.dependency "YYModel", "~> 1.0.4"
 end
