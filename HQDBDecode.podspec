@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   数据库对象映射模型.
                    DESC
 
-  s.homepage     = "http://192.168.1.249:10080/liuhuanqing/HQDBDecode"
+  s.homepage     = "https://github.com/suweiz19890921/HQDBDecode
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "刘欢庆" => "liu-lhq@163.com" }
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "ssh://git@git.solot.co:10022/liuhuanqing/HQDBDecode.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/suweiz19890921/HQDBDecode.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
