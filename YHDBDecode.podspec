@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "HQDBDecode"
+  s.name         = "YHDBDecode"
   s.version      = "1.0.1"
   s.summary      = "数据库对象映射模型"
 
@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   数据库对象映射模型.
                    DESC
 
-  s.homepage     = "https://github.com/suweiz19890921/HQDBDecode
+  s.homepage     = "https://github.com/suweiz19890921/YHDBDecode
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "刘欢庆" => "liu-lhq@163.com" }
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/suweiz19890921/HQDBDecode.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/suweiz19890921/YHDBDecode.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
