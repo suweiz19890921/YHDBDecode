@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/suweiz19890921/YHDBDecode
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "刘欢庆" => "liu-lhq@163.com" }
+  s.author             = { "刘欢庆" => "814325429@qq.com" }
   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
